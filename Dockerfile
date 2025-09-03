@@ -1,5 +1,5 @@
-# Use a lightweight Node.js image
-FROM node:16-slim
+# Use Node.js LTS on Debian Bullseye
+FROM node:20-bullseye-slim
 
 # Install Java JDK (Minimal dependencies)
 RUN apt-get update && apt-get install -y default-jdk-headless && rm -rf /var/lib/apt/lists/*
